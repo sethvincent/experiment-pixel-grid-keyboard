@@ -1,0 +1,29 @@
+{
+  "name": "experiment-pixel-grid-keyboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "bundle": "browserify index.js -o bundle.js",
+    "start": "budo index.js:bundle.js -l",
+    "deploy": "npm run bundle && surge . experiment-pixel-grid-keyboard.surge.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sethvincent/experiment-pixel-grid-keyboard.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sethvincent/experiment-pixel-grid-keyboard/issues"
+  },
+  "homepage": "https://github.com/sethvincent/experiment-pixel-grid-keyboard#readme",
+  "dependencies": {
+    "pixel-grid": "^1.0.2",
+    "vkey": "^1.0.0"
+  },
+  "devDependencies": {
+    "browserify": "^13.1.0",
+    "budo": "^9.0.0"
+  }
+}
